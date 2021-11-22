@@ -36,10 +36,25 @@ Below is the complete environment setup to run a faster-rcnn:
     conda install pytorch==1.5.0 torchvision==0.6.0 cudatoolkit=10.2 -c pytorch
     ```
     
-3. Install this directory  
-  
-  You can clone the directory by running
-  
-  ```shell
+### Install Directory ###
+1. Install mmcv
+
+    You can run
+    ```shell
+    pip install mmcv-full -f https://download.openmmlab.com/mmcv/dist/cu102/torch1.5.0/index.html
+    ```
     
+3. Install this mmdetection  
+
+    You can clone the directory by running this command in your terminal
+  
+    ```shell
+    git clone https://github.com/Zhuo-Chen-byte/MMDetection-FasterRCNN.git
+    ```
+    or down the .zip manually
+    
+4. Install MMDetection  
+    You can simply install mmdetection with the following command:
+    ```shell
+    pip install mmdet
     ```
