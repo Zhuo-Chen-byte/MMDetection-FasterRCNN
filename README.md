@@ -165,3 +165,8 @@ To train your own faster-rcnn, use the following commands:
 cd mmdetection
 python tools/train.py configs/my_faster_rcnn.py --gpus 1 --work-dir {your working directory}
 ```
+
+To test your model, use the the following commands:
+```shell
+python tools/test.py configs/my_faster_rcnn.py {your working directory}/{the final .pth file} --out={directory to store results}/result.pkl
+```
