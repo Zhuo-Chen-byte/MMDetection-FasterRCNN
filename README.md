@@ -60,7 +60,7 @@ Below is the complete environment setup to run a faster-rcnn:
     
     or down the .zip manually
     
-3. Prepare mmdet
+3. Prepare mmdet  
 
     After you download this directory, simply run the following command:
     
@@ -69,7 +69,7 @@ Below is the complete environment setup to run a faster-rcnn:
     pip install -r requirements/build.txt
     pip install -v -e .  # or "python setup.py develop"
     ```
-4. Verification
+4. Verification  
     
     You can run the following commands to check if installation is successfully
     
@@ -88,9 +88,9 @@ Below is the complete environment setup to run a faster-rcnn:
     The above commands shall be compiled without error if installation is successful
 
 ## Training Your Own Faster-RCNN ##
-1. Prepare the dataset
-    To run a faster-rcnn based on this mmdetection, you need a coco dataset
-    To learn more about a coco dataset, see *https://github.com/cocodataset*
+1. Prepare the dataset  
+    To run a faster-rcnn based on this mmdetection, you need a coco dataset  
+    To learn more about a coco dataset, see *https://github.com/cocodataset*  
    
 2. Edit the configuration  
     After preparing the dataset, look at *configs/my_faster_rcnn.py*  
