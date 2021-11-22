@@ -1,8 +1,8 @@
 # MMDetection-FasterRCNN #
 ## Content ##
 In addition to all files of a regular mmdetection project, this directory holds (*after you download them*):  
-- Two pretrained PyTorch faster rcnn backbones (*faster_rcnn_r50_fpn_1x_coco.pth* and *faster_rcnn_r50_fpn_2x_coco.pth* under pretrained/)  
-- The complete configuration to train a faster-rcnn model (*my_faster_rcnn.py* under configs/faster_rcnn/)  
+- Two pretrained PyTorch faster rcnn backbones (*faster_rcnn_r50_fpn_1x_coco.pth* and *faster_rcnn_r50_fpn_2x_coco.pth* under *pretrained/*)  
+- The complete configuration to train a faster-rcnn model (*my_faster_rcnn.py* under *configs/faster_rcnn/*)  
 
 To learn other contents this directory holds, see *https://github.com/open-mmlab/mmdetection/blob/master/docs/get_started.md*
 
@@ -87,3 +87,10 @@ Below is the complete environment setup to run a faster-rcnn:
     
     The above commands shall be compiled without error if installation is successful
 
+## Training Your Own Faster-RCNN ##
+    1. Prepare the dataset
+        To run a faster-rcnn based on this mmdetection, you need a coco dataset
+        To learn more about a coco dataset, see *https://github.com/cocodataset*
+   
+    2. Edit the configuration
+        After preparing the dataset, look at *configs/my_faster_rcnn.py*
