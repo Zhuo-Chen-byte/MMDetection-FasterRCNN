@@ -150,4 +150,9 @@ Below is the complete environment setup to run a faster-rcnn:
     gpu_ids = range(0, 1)
     ```
     
-    are other training parameters. *max_epochs* at *line 232* determines the total number of epoches to train; *load_from* at *line 238* is the directory which stores the pretrained model parameters; *classes* at *line 241* are the complete classification categories based on your dataset, while *work_dir* at *line 242* is the directory to store your training results. Changes these parameters based on your dataset
+    are other training parameters:
+    1. *max_epochs* at *line 232* determines the total number of epoches to train
+    2. *load_from* at *line 238* is the directory which stores the pretrained model parameters 
+    3. *classes* at *line 241* are the complete classification categories based on your dataset
+    4. *work_dir* at *line 242* is the directory to store your training results.
+    Changes these parameters based on your dataset
