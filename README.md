@@ -157,3 +157,11 @@ Below is the complete environment setup to run a faster-rcnn:
     4. *work_dir* at *line 242* is the directory to store your training results  
  
     Changes these parameters based on your dataset
+    
+## Training and Testing ##
+To train your own faster-rcnn, use the following commands:
+
+```shell
+cd mmdetection
+python tools/train.py configs/my_faster_rcnn.py --gpus 1 --work-dir {your working directory}
+```
