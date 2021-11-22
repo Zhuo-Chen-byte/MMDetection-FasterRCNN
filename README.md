@@ -36,7 +36,7 @@ Below is the complete environment setup to run a faster-rcnn:
     conda install pytorch==1.5.0 torchvision==0.6.0 cudatoolkit=10.2 -c pytorch
     ```
     
-### Install Directory ###
+### Install the directory ###
 1. Install mmcv
 
     The template command to install mmcv is
