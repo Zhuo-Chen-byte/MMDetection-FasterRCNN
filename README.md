@@ -132,4 +132,22 @@ Below is the complete environment setup to run a faster-rcnn:
     ```
     
     to access your dataset
-   
+    
+    Finally, from *line 232* to *line 243*
+    
+    ```shell
+    runner = dict(type='EpochBasedRunner', max_epochs=15)
+    checkpoint_config = dict(create_symlink=False, interval=1)
+    log_config = dict(interval=50, hooks=[dict(type='TextLoggerHook')])
+    custom_hooks = [dict(type='NumClassCheckHook')]
+    dist_params = dict(backend='nccl')
+    log_level = 'INFO'
+    load_from = 'pretrained/faster_rcnn_r50_fpn_2x_coco.pth'
+    resume_from = None
+    workflow = [('train', 1), ('val', 1)]
+    classes = ('cancer', )
+    work_dir = '/mnts2d/med_data1/zhuochen'
+    gpu_ids = range(0, 1)
+    ```
+    
+    are other training parameters. *max_epochs* at *line 232* determines the total number of epoches to train; *load_from* at *line 238* is the directory which stores the pretrained model parameters; *classes* at *line 241* are the complete classification categories based on your dataset, while *work_dir* at *line 242* is the directory to store your training results. Changes these parameters based on your dataset
