@@ -93,14 +93,31 @@ Below is the complete environment setup to run a faster-rcnn:
     To learn more about a coco dataset, see *https://github.com/cocodataset*
    
 2. Edit the configuration
-    After preparing the dataset, look at *configs/my_faster_rcnn.py*
-    Take a look at these lines:
+    After preparing the dataset, look at *configs/my_faster_rcnn.py*  
+    Take a look at these lines:  
+    
     At *line 46*,
     
     ```shell
     num_classes=1
     ```
     
-    records the number of classes you want the model to classify. Before training, changes *1* to the number of classes you need
+    records the number of classes you want the model to classify. Before training, changes *1* to the number of classes you need  
     
+    At *line 107*, changes
+    
+    ```shell
+    data_root = '/data/zhuochen/coco/'
+    ```
+   to your own data root directory before training  
+   
+    At *line 153, 177, and 201*, 
+    
+    ```shell
+    ann_file='/data/zhuochen/coco/annotations/train_val.json'
+    ann_file='/data/zhuochen/coco/annotations/test_val.json'
+    ann_file='/data/zhuochen/coco/annotations/test_val.json'
+    ```
+    
+    are the addresses of the train, test, and validation jsons. Change them to your own before training  
     
