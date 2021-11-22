@@ -1,7 +1,7 @@
 # MMDetection-FasterRCNN #
 ## Content ##
 In addition to all files of a regular mmdetection project, this directory holds (*after you download them*):  
-- Two pretrained PyTorch faster rcnn backbones (*pretrained/faster_rcnn_r50_fpn_1x_coco.pth (and 2x)*)  
+- Two pretrained PyTorch faster rcnn backbones (*pretrained/faster_rcnn_r50_fpn_1x_coco.pth* (and *2x*))  
 - The complete configuration to train a faster-rcnn model (*configs/faster_rcnn/my_faster_rcnn.py*)  
 
 To learn other contents this directory holds, see *https://github.com/open-mmlab/mmdetection/blob/master/docs/get_started.md*
