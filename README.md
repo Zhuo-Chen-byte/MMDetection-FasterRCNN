@@ -14,6 +14,7 @@ Below is the complete environment setup to run a faster-rcnn:
 - TorchVision: 0.6.0
 - OpenCV: 4.5.4
 - GCC 9.2.0
+- CUDA 10.2
 - CuDNN 7.6.5
 - MMCV: 1.2.7
 - MMCV Compiler: GCC 7.3
@@ -21,4 +22,24 @@ Below is the complete environment setup to run a faster-rcnn:
 - MMDetection: 2.10.0
 
 ## Installation ##
-Download the
+### Prepare the environment ###
+1. Create a conda virtual environment and activate it
+
+    ```shell
+    conda create -n openmmlab python=3.7 -y
+    conda activate openmmlab
+    ```
+    
+2. Install PyTorch and torchvision
+
+    ```shell
+    conda install pytorch==1.5.0 torchvision==0.6.0 cudatoolkit=10.2 -c pytorch
+    ```
+    
+3. Install this directory  
+  
+  You can clone the directory by running
+  
+  ```shell
+    
+    ```
