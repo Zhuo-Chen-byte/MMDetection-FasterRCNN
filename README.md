@@ -104,20 +104,32 @@ Below is the complete environment setup to run a faster-rcnn:
     
     records the number of classes you want the model to classify. Before training, changes *1* to the number of classes you need  
     
-    At *line 107*, changes
+    At *line 153 & 154, 177 & 178, and 201 & 202*, 
+    
+    ```shell
+    ann_file='/data/zhuochen/coco/annotations/train_val.json'
+    img_prefix='/data/zhuochen/coco/train_images/' # line 154
+    
+    ann_file='/data/zhuochen/coco/annotations/test_val.json'
+    img_prefix='/data/zhuochen/coco/test_images/' # line 178
+    
+    ann_file='/data/zhuochen/coco/annotations/test_val.json'
+    img_prefix='/data/zhuochen/coco/test_images/' # line 202
+    ```
+    
+    are the addresses of the train, test, and validation jsons and images. Change them to your own before training  
+    
+    Or you can change *line 107*
     
     ```shell
     data_root = '/data/zhuochen/coco/'
     ```
-   to your own data root directory before training  
-   
-    At *line 153, 177, and 201*, 
+    which is the root directory of your coco dataset and uses
     
     ```shell
-    ann_file='/data/zhuochen/coco/annotations/train_val.json'
-    ann_file='/data/zhuochen/coco/annotations/test_val.json'
-    ann_file='/data/zhuochen/coco/annotations/test_val.json'
+    ann_file= data_root + annotation_directory
+    img_prefix = data_root + image_directory
     ```
     
-    are the addresses of the train, test, and validation jsons. Change them to your own before training  
-    
+    to access your dataset
+   
