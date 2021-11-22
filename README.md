@@ -92,7 +92,7 @@ Below is the complete environment setup to run a faster-rcnn:
     To run a faster-rcnn based on this mmdetection, you need a coco dataset
     To learn more about a coco dataset, see *https://github.com/cocodataset*
    
-2. Edit the configuration
+2. Edit the configuration  
     After preparing the dataset, look at *configs/my_faster_rcnn.py*  
     Take a look at these lines:  
     
