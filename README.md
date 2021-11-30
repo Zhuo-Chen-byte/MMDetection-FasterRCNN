@@ -42,12 +42,12 @@ Below is the complete environment setup to run a faster-rcnn:
     The template command to install mmcv is
     
     ```shell
-    pip install mmcv -f https://download.openmmlab.com/mmcv/dist/{cu_version}/{torch_version}/index.html
+    pip install mmcv=={mmcv version} -f https://download.openmmlab.com/mmcv/dist/{cu_version}/{torch_version}/index.html
     ```
     
     For the environment this directory depends on specifically, you can run
     ```shell
-    pip install mmcv -f https://download.openmmlab.com/mmcv/dist/cu102/torch1.5.0/index.html
+    pip install mmcv==1.2.7 -f https://download.openmmlab.com/mmcv/dist/cu102/torch1.5.0/index.html
     ```
     
 2. Install this mmdetection  
